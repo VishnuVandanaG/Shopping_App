@@ -59,7 +59,6 @@ function renderFruit(){
   const fruit = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b6899953d1a866534f516e2");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
@@ -96,7 +95,6 @@ function renderBakery(){
   const bakery = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b6899123d1a866534f516de");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
@@ -133,7 +131,6 @@ function renderBeverages(){
   const beverages = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b675e5e5936635728f9fc30");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
@@ -170,7 +167,6 @@ function renderBeauty(){
   const fruit = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b68994e3d1a866534f516df");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
@@ -207,7 +203,6 @@ function renderBaby(){
   const baby = document.getElementById("functions");
 
   const array = productData.filter(item => item.category == "5b6899683d1a866534f516e0");
-  console.log(array);
 return(
   content.innerHTML =  `<div class="functions" id="functions">
   <div class="function-buttons">
@@ -252,7 +247,6 @@ function addcart(id) {
   
     basket.push(array1);
   }
-  console.log(basket);
   updateCart(id);
   calculation(id);
 }

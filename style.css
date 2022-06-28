@@ -261,6 +261,8 @@ form > input {
     width: 500px;
     height: 600px;
     border: 1px solid grey;
+    margin-left: 100px;
+    margin-top: -149px;
 }
 
 
