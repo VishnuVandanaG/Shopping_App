@@ -1,0 +1,425 @@
+.container {
+    width: 1200px; 
+    margin: auto;
+}
+
+
+.navigation {
+    display: flex;
+    position: relative;
+    height: 130px;
+    gap: 10px;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+    padding-bottom: 8px;
+    justify-content: space-between;
+}
+
+.home {
+    display: flex;
+    gap: 20px;
+    justify-content: baseline;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.register {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.main-cart {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: firebrick;
+    color: white;
+    height: 60px;
+    width: 130px;
+    border: none;
+    text-align: initial;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+.offers {
+    display: flex;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+    justify-content: center;
+} 
+
+
+.fruits {
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.fruits-sub {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.bakery {
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.bakery-sub {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.beverages {
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.beverages-sub {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.beauty {
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.beauty-sub {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.baby {
+    display: flex;
+    padding-left: 50px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgba(20, 33, 61, 0.2);
+}
+
+.baby-sub {
+    padding-top: 80px;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.footer {
+    background-color: lightgrey;
+    font-size: smaller;
+    padding-left: 80px;
+    height: 20px;
+    border: none;
+    margin: 0;
+}
+
+.button {
+    background-color: firebrick;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 32px;
+    font-size: 18px;
+    font-weight: 900px;
+    cursor: pointer;
+
+}
+
+.product {
+    display: grid;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 3px dotted lightgray;
+}
+
+.price > button {
+    cursor: pointer;
+}
+
+.buy {
+    background-color: firebrick;
+    color: white;
+    width: fit-content;
+    height: 30px;
+}
+
+.item > p {
+    background-color: lightgray;
+    font-size: large;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    padding: 0px 100px;
+}
+
+form > input {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 333px;
+    height: 42px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.signupbtn {
+    background-color: firebrick;
+    color: white;
+    width: 333px;
+    height: 42px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+.buton {
+    padding-top: 10px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-1 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 60px;
+}
+
+.loginbtn {
+    background-color: firebrick;
+    color: white;
+    width: 333px;
+    height: 42px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+
+.cart-1 {
+    padding-left: 600px;
+    padding-top: 150px
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 600px;
+    border: 1px solid grey;
+}
+
+
+
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    padding: 0px 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.navbar > h1 {
+    cursor: pointer;
+}
+
+.cartbtn {
+    background-color: firebrick;
+    color: white;
+    width: 480px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cartbutton {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.main-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.function-buttons {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    margin: 0;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 8;
+      
+
+}
+
+.functions {
+   display: grid;
+   grid-template-columns: 223px repeat(4, 223px);
+   gap: 30px;
+   justify-content: center;  
+}
+
+.nav-link {
+    height: 50px;
+    margin: 0;
+    border: none;
+    border-bottom: 2px solid #aaa;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main-cart1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.total1 {
+    padding: 50px;
+}
+
+.total {
+    background-color: firebrick;
+    color: white;
+    width: 1100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .fruits, .baby, .bakery, .beverages, .beauty {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .fruits-sub, .baby-sub, .bakery-sub, .beverages-sub, .beauty-sub {
+        padding-top: 20px;
+    }
+
+    .functions {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) { 
+    .fruits, .baby, .bakery, .beverages, .beauty {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .fruits-sub, .baby-sub, .bakery-sub, .beverages-sub, .beauty-sub {
+        padding-top: 20px;
+    }
+
+    .functions {
+        grid-template-columns: auto;
+    }
+} 
+
