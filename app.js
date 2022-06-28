@@ -20,6 +20,8 @@ function renderBanners() {
 renderBanners();
 
 function renderProduct() {
+  document.getElementById("copyRightInfo").style.display = "block";
+  document.getElementById("content").style.display = "block";
 const product = document.getElementById("content");
 
   
@@ -247,6 +249,7 @@ function addcart(id) {
   
     basket.push(array1);
   }
+  localStorage.cartItems = JSON.stringify(basket);
   updateCart(id);
   calculation(id);
 }
