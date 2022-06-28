@@ -20,6 +20,8 @@ function renderBanners() {
 renderBanners();
 
 function renderProduct() {
+  document.getElementById("cartObjects").style.display = "none"; 
+  document.getElementById("cartTotal").style.display = "none";
   document.getElementById("copyRightInfo").style.display = "block";
   document.getElementById("content").style.display = "block";
 const product = document.getElementById("content");
@@ -249,8 +251,8 @@ function addcart(id) {
   
     basket.push(array1);
   }
-  localStorage.cartItems = JSON.stringify(basket);
-  updateCart(id);
+  sessionStorage.cartItems = JSON.stringify(basket);
+  //updateCart(id);
   calculation(id);
 }
 
@@ -258,6 +260,7 @@ window.addcart = addcart;
 
 function updateCart() {
   let cart_item = document.getElementById("cartObjects");
+  cart_item.style.display = "none";
   cart_item.innerHTML = "";
   return(
     cart_item.innerHTML += basket.map((x) => {

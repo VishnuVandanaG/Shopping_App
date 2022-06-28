@@ -1,4 +1,6 @@
 function handleSignIn(){
+   document.getElementById("cartObjects").style.display = "none";
+   document.getElementById("cartTotal").style.display = "none";
    document.getElementById("copyRightInfo").style.display = "block";
     document.getElementById("content").style.display = "block";
     fetch('./html/login.html')
@@ -7,6 +9,8 @@ function handleSignIn(){
   }
 
   function handleSignUp(){
+    document.getElementById("cartObjects").style.display = "none";
+    document.getElementById("cartTotal").style.display = "none";
     document.getElementById("copyRightInfo").style.display = "block";
     document.getElementById("content").style.display = "block";
     fetch('./html/signup.html')
@@ -15,6 +19,8 @@ function handleSignIn(){
   }
 
   function handleHome(){
+    document.getElementById("cartObjects").style.display = "none";
+    document.getElementById("cartTotal").style.display = "none";
     document.getElementById("copyRightInfo").style.display = "block";
     document.getElementById("content").style.display = "block";
     fetch('./html/home.html')
@@ -22,14 +28,21 @@ function handleSignIn(){
     .then(text=> document.getElementById('content').innerHTML = text); 
   }
   function handleCart(){
-    if(JSON.parse(localStorage.getItem("cartItems"))){
+    let isCartEmpty = false;
+    if(document.getElementById("total1").innerHTML=='Rs.0'){
+      isCartEmpty = true;
+    }
+    if(JSON.parse(sessionStorage.getItem("cartItems")) && !isCartEmpty){
+      document.getElementById("cartObjects").style.display = "block";
+      document.getElementById("cartTotal").style.display = "block";
       document.getElementById("copyRightInfo").style.display = "none";
       document.getElementById("content").style.display = "none";
       fetch('./html/cart.html')
       .then(response=> response.text())
-      .then(text=> document.getElementById('content').innerHTML = JSON.parse(localStorage.getItem("cartItems") || text)); 
+      .then(text=> document.getElementById('content').innerHTML = JSON.parse(sessionStorage.getItem("cartItems") || text)); 
     }
     else{
+      document.getElementById("cartTotal").style.display = "none";
       fetch('./html/cart.html')
       .then(response=> response.text())
       .then(text=> document.getElementById('content').innerHTML = text); 
