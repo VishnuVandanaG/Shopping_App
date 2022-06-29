@@ -133,8 +133,8 @@ export const productData = [
   },
   {
     "name": "Coca Cola Soft Drink, 2x1.75 L",
-    "imageURL": "/static/images/products/beverages/bournvita.jpg",
-    "description": "Cadbury Bournvita is a delicious chocolate health drink which is enriched with Vitamin (D,B2,B9,B12). It combines the great taste of chocolate, and goodness of essential nutrients that aid growth and development.",
+    "imageURL": "/static/images/products/beverages/coke.jpg",
+    "description": "Coca Cola is a refreshing drink. Coca-Cola, or Coke, is a carbonated soft drink manufactured by the Coca-Cola Company. Originally marketed as a temperance drink and intended as a patent medicine",
     "price": 150,
     "price1": 150,
     "item": 1,
