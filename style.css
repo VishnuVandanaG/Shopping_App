@@ -163,6 +163,7 @@
 
 .buy {
     background-color: firebrick;
+    border:none;
     color: white;
     width: fit-content;
     height: 30px;

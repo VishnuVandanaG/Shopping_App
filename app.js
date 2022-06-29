@@ -252,18 +252,20 @@ function addcart(id) {
     basket.push(array1);
   }
   sessionStorage.cartItems = JSON.stringify(basket);
-  //updateCart(id);
+  updateCart(id);
   calculation(id);
 }
 
 window.addcart = addcart;
 
-function updateCart() {
+function updateCart(id,isItemIncrementDecrement) {
   let cart_item = document.getElementById("cartObjects");
-  cart_item.style.display = "none";
-  cart_item.innerHTML = "";
+  if(!isItemIncrementDecrement){
+    cart_item.style.display = "none";
+    cart_item.innerHTML = "";
+  }
   return(
-    cart_item.innerHTML += basket.map((x) => {
+    cart_item.innerHTML = basket.map((x) => {
       let { id, name, imageURL, description, price, price1, item } = x;
       return `
         <div class="main-cart1" id="main-cart1">
@@ -307,7 +309,7 @@ function changeNumberofItems(action, id)  {
     };
     
   });
-  updateCart(id);
+  updateCart(id,true);
   calculation(id);
  
 };
@@ -333,7 +335,7 @@ let calculation = (id) => {
   }
 })
 
-updateCart(id);
+updateCart(id,true);
 
   let cart2 = document.getElementById("main-cart2");
   cart2.innerHTML = basket.map((x) => x.item).reduce((x,y) => x+y, 0) + ' Items';
